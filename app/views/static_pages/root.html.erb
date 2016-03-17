@@ -1,0 +1,249 @@
+<div id="root-intro">
+  <div class="intro-content valign-wrapper">
+    <div class="container valign">
+        <center>
+          <div class="intro-text">
+            <div class="intro-padding hide-on-med-and-up"></div>
+            <h1><span class="hide-on-small-only">Welcome to Tower Automotive</h1></span>
+            <h2><span class="hide-on-med-and-up">Tower Automotive</h2></span>
+            <h4>What Drives You?<br></h4>
+          </div>
+          <div class="row hide-on-small-only">
+            <div class="big-search-button">
+              <div class="col s12">
+                <a href="<%= inventory_url %>">
+                  <div class="card white big-search-btn valign-wrapper hoverable">
+                    <div class="card-content blue-grey-text text-darken-1 valign">
+                      <span class="card-title">
+                        <button class="btn-floating waves-effect waves-teal"><i class="material-icons">search</i></button> Inventory Search
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>         
+            <div class="col s12 m4 l4">
+              <a class='waves-effect waves-light btn-large intro-btn right dropdown-button' data-hover="true" href='#' data-activates='service-drop-hm'>Service</a>
+              <ul id='service-drop-hm' class='dropdown-content'>
+                  <li><a href="<%= service_url %>">Service</a></li>
+                  <li><a href="<%= parts_url %>">Parts</a></li>
+                  <li><a href="<%= bodyshop_url %>">Bodyshop</a></li>
+              </ul>
+            </div>
+            <div class="col s12 m4 l4">
+              <a class="waves-effect waves-light btn-large intro-btn" href="<%= finance_url %>">Finance</a>
+            </div>
+            <div class="col s12 m4 l4">
+              <a class="waves-effect waves-light btn-large intro-btn left modal-trigger" href="#login-modal">Log In</a>
+            </div>
+          </div>
+          <div class="row hide-on-med-and-up">
+            <div class="big-search-button">
+              <div class="col s12">
+                <a href="<%= inventory_url %>">
+                  <div class="card white big-search-btn valign-wrapper hoverable">
+                    <div class="card-content blue-grey-text text-darken-1 valign">
+                      <span class="card-title">
+                        <button class="btn-floating waves-effect waves-teal"><i class="material-icons">search</i></button> Inventory Search
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>                   
+            <div class="col s12">
+              <a class='waves-effect waves-light btn-large intro-btn full-width dropdown-button' href='#' data-activates='service-drop-hm-mob'>Service</a>
+              <ul id='service-drop-hm-mob' class='dropdown-content'>
+                  <li><a href="<%= service_url %>">Service</a></li>
+                  <li><a href="<%= parts_url %>">Parts</a></li>
+                  <li><a href="<%= bodyshop_url %>">Bodyshop</a></li>
+              </ul>              
+            </div>
+            <div class="col s12">
+              <a class="waves-effect waves-light btn-large intro-btn full-width" href="<%= finance_url %>">Finance</a>
+            </div>
+            <div class="col s12">
+              <a class="waves-effect waves-light btn-large intro-btn full-width login-modal" href="#login-modal">Log In</a>
+            </div>
+          </div>          
+        </center>
+    </div>
+  </div>
+  <div class="intro-search valign-wrapper">
+    <div class="container valign">
+      <div class="card-panel hoverable intro-search-card">  
+        <table class="intro-search-table">
+          <tbody>
+            <tr>
+              <td class="intro-search-cell-1">
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>What's Your Favorite Color?</option>
+                    <option value="1">Red</option>
+                    <option value="2">Black</option>
+                    <option value="3">Blue</option>
+                  </select>
+                  <label class="teal-text" style="margin-left: -10px;">Color</label>
+                </div>
+              </td>
+              <td class="intro-search-cell-2">
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Find Your Brand.</option>
+                    <option value="1">Ford</option>
+                    <option value="2">Chevrolet</option>
+                    <option value="3">Dodge</option>
+                  </select>
+                  <label class="teal-text" style="margin-left: -10px;">Make</label>
+                </div>
+              </td>
+              <td class="intro-search-cell-3">
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>What's Your Style?</option>
+                    <option value="1">Car</option>
+                    <option value="2">Truck</option>
+                    <option value="3">SUV</option>
+                    <option value="4">Mini-Van</option>
+                  </select>
+                  <label class="teal-text" style="margin-left: -10px;">Body</label>
+                </div>
+              </td>                                 
+              <td class="intro-search-cell-4">
+                <a href="<%= inventory_url %>"><button class="intro-search-btn btn-large btn-floating waves-effect waves-teal"><i class="material-icons" href="<%= inventory_url %>">search</i></button></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>                                  
+    </div>
+  </div>
+</div>  
+
+  <div class="section">
+    <div class="container"><br>
+      <div class="row">
+        <div class="col l4 m10 push-m1">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><blockquote>What's It Worth?</blockquote></span>
+              <p>Knowledge is power. Car buying power. Find out what your car is worth right now and let it's value work for <em>you</em>.</p>
+            </div>
+            <div class="card-action right-align">
+              <a href="<%= value_url %>">Discover</a>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 m10 push-m1">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><blockquote>Sell Us Your Car</blockquote></span>
+              <p>We need more cars! With so many happy customers, it's hard to keep up with demand. Sell us your car today and bring home some extra cash</p>
+            </div>
+            <div class="card-action right-align">
+              <a href="<%= sellcar_url %>">Let's Go</a>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 m10 push-m1">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><blockquote>Trade Up</blockquote></span>
+              <p>Let your car work for you. <em>No one</em> gives you more for your trade than Tower. Let us show you how far your trade can go!</p>
+            </div>
+            <div class="card-action right-align">
+              <a href="<%= trade_url %>">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section grey lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col m6 l4">
+          <div class="card blue darken-1">
+            <div class="card-image">
+              <%= image_tag "map.jpg", class: "responsive-img" %>
+              <span class="card-title deep-orange-text text-darken-4 intro-text">123 Main St.<br>Yourtown, NW 12345</span>
+            </div>
+            <div class="card-content right-align">
+              <button style="margin-top: -60px; margin-right: 5px;" class="btn-floating btn-large waves-effect waves-blue white"><i class="material-icons blue-text text-darken-1">directions</i></button><br>
+              <a href="#" class="white-text">Directions</a>
+          </div>
+        </div>
+      </div>
+        <div class="col s12 m6 l8 center-align">
+          <h3 style="margin-bottom: -70px">Specials</h3>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <%= image_tag "2016dart.jpg" %>
+                  <span class="card-title">2016 Dart</span>
+                </div>
+                <div class="card-content">
+                  <p>2016 Dart</p>
+                </div>
+              </div>
+            </a>
+            <a class="carousel-item" href="#two!">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <%= image_tag "rav4.jpg" %>
+                  <span class="card-title">2016 Rav4</span>
+                </div>
+                <div class="card-content">
+                  <p>2016 Rav4</p>
+                </div>
+              </div>
+            </a>
+            <a class="carousel-item" href="#three!">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <%= image_tag "2016dart.jpg" %>
+                  <span class="card-title">2016 Dart</span>
+                </div>
+                <div class="card-content">
+                  <p>2016 Dart</p>
+                </div>
+              </div>
+            </a>
+            <a class="carousel-item" href="#four!">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <%= image_tag "rav4.jpg" %>
+                  <span class="card-title">2016 Rav4</span>
+                </div>
+                <div class="card-content">
+                  <p>2016 Rav4</p>
+                </div>
+              </div>
+            </a>
+            <a class="carousel-item" href="#five!">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <%= image_tag "2016dart.jpg" %>
+                  <span class="card-title">2016 Dart</span>
+                </div>
+                <div class="card-content">
+                  <p>2016 Dart</p>
+                </div>
+              </div>
+            </a>
+            <a class="carousel-item" href="#six!">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <%= image_tag "rav4.jpg" %>
+                  <span class="card-title">2016 Rav4</span>
+                </div>
+                <div class="card-content">
+                  <p>2016 Rav4</p>
+                </div>
+              </div>
+            </a>                        
+          </div>
+      </div>
+    </div>
+  </div>
