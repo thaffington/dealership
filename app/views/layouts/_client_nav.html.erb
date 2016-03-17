@@ -29,7 +29,7 @@
             </a> 
         </div>           
       <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Inventory" href="<%= inventory_url %>">
+        <li class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Inventory"><a href="<%= inventory_url %>">
         	<i class="material-icons grey-text text-darken-1">directions_car</i>
         </a></li>
         <li><a class='dropdown-button' data-beloworigin="true" data-hover="true" href='#' data-activates='service-drop'><i class="material-icons grey-text text-darken-1">build</i></a>
@@ -39,19 +39,19 @@
                 <li><a href="<%= bodyshop_url %>">Bodyshop</a></li>
             </ul>
         </li>
-        <li><a class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Finance" href="<%= finance_url %>">
+        <li class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Finance"><a href="<%= finance_url %>">
         	<i class="material-icons grey-text text-darken-1">attach_money</i>
         </a></li>
-        <li><a class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contact Us" href="<%= contact_url %>">
+        <li class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contact Us"><a data-target="contact-modal" class="modal-trigger">
         	<i class="material-icons grey-text text-darken-1">perm_phone_msg</i>
         </a></li>
-        <li><a class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Log In" href="#">
+        <li class="waves-effect waves-teal tooltipped" data-position="bottom" data-delay="50" data-tooltip="Log In"><a data-target="login-modal" class="modal-trigger">
         	<i class="material-icons grey-text text-darken-1">person</i>
         </a></li>                                
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">
+        <li><a data-target="login-modal" class="modal-trigger">
         	<i class="material-icons grey-text text-darken-1 left">person</i>Log In
         </a></li>
         <li><a href="<%= inventory_url %>">
@@ -69,7 +69,7 @@
         <li><a href="<%= finance_url %>">
         	<i class="material-icons grey-text text-darken-1 left">attach_money</i>Finance
         </a></li>
-        <li><a href="<%= contact_url %>">
+        <li><a data-target="contact-modal" class="modal-trigger">
         	<i class="material-icons grey-text text-darken-1 left">perm_phone_msg</i>Contact Us
         </a></li>
       </ul>

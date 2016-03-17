@@ -1,17 +1,113 @@
   <div id="login-modal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" style="padding-bottom: 0px;">
 	  <div class="row">
 	    <div class="col s12">
-	      <ul class="tabs">
-	        <li class="tab col s6"><a href="#log-in-form">Log In</a></li>
-	        <li class="tab col s6"><a class="active" href="#sign-up-form">Sign Up</a></li>
+	      <ul class="tabs noscrollbar">
+	        <li class="tab col s6"><a class="active" href="#log-in-form">Log In</a></li>
+	        <li class="tab col s6"><a href="#sign-up-form">Sign Up</a></li>
 	      </ul>
 	    </div>
-	    <div id="log-in-form" class="col s12">Log In</div>
-	    <div id="sign-up-form" class="col s12">Sign Up</div>
+	    <div id="log-in-form" class="col s12">
+			<h4>Login</h4>
+			<form class="row">							
+				<div class="input-field col s6">
+					<input id="first_name" type="text" class="validate">
+					<label for="first_name">First Name</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Last Name</label>
+				</div>				
+				<div class="input-field col m6 s12">
+					<input id="email_address" type="email" class="validate">
+					<label for="email_address">Email Address</label>
+				</div>
+				<div class="input-field col m6 s12">
+					<input id="phone_number" type="tel" class="validate">
+					<label for="phone_number">Phone Number</label>
+				</div>
+				<div class="col s12 right-align">
+					<button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+					</button>
+					<a class="modal-close waves-effect waves-red btn-flat">Cancel</a>
+				</div>
+			</form>	
+	    </div>
+	    <div id="sign-up-form" class="col s12">
+			<form class="row">
+				<h4>Sign Up</h4>							
+				<div class="input-field col s6">
+					<input id="first_name" type="text" class="validate">
+					<label for="first_name">First Name</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Last Name</label>
+				</div>				
+				<div class="input-field col m6 s12">
+					<input id="email_address" type="email" class="validate">
+					<label for="email_address">Email Address</label>
+				</div>
+				<div class="input-field col m6 s12">
+					<input id="phone_number" type="tel" class="validate">
+					<label for="phone_number">Phone Number</label>
+				</div>
+				<div class="col s12">
+					<p>
+						<input type="checkbox" id="eblast" />
+						<label for="eblast">Send me monthly specials & coupons</label>
+					</p>
+				</div>
+				<div class="col s12 right-align">
+					<button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+					</button>
+					<a class="modal-close waves-effect waves-red btn-flat">Cancel</a>
+				</div>
+			</form>	
+	    </div>
 	  </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
-    </div>
   </div>
+  <form id="contact-modal" class="modal noscrollbar">
+    <div class="modal-content">
+		<h4>Contact Us</h4>
+		<div class="row">							
+			<div class="input-field col s6">
+				<input id="first_name" type="text" class="validate">
+				<label for="first_name">First Name</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="last_name" type="text" class="validate">
+				<label for="last_name">Last Name</label>
+			</div>				
+			<div class="input-field col m6 s12">
+				<input id="email_address" type="email" class="validate">
+				<label for="email_address">Email Address</label>
+			</div>
+			<div class="input-field col m6 s12">
+				<input id="phone_number" type="tel" class="validate">
+				<label for="phone_number">Phone Number</label>
+			</div>
+			<div class="row">
+				<div class="col s12 m4 l4 grey-text text-darken-2">
+					<p>Preferred Contact:<br>
+					<input name="group1" type="radio" id="call-me" />
+					<label for="call-me">Call</label><br>
+					<input name="group1" type="radio" id="text_me" />
+					<label for="text_me">Text</label><br>
+					<input name="group1" type="radio" id="email-me"/>
+					<label for="email-me">Email</label>
+				</div>
+				<div class="input-field col s12 m8 l8">
+					<textarea id="comments" class="materialize-textarea"></textarea>
+					<label for="comments">Questions or Comments?</label>
+				</div>
+			</div>
+			<div class="col s12 right-align">		
+				<button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+				</button>
+				<a class="modal-close waves-effect waves-red btn-flat">Cancel</a>
+			</div>
+		</div>		
+	</div>
+  </form>
